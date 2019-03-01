@@ -28,8 +28,6 @@ body {
 }
 
 img {
-  display: block;
-  margin: 0 auto;
-  align-self: center;
   object-fit: contain;
+  width: 100%;
 }
