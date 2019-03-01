@@ -1,12 +1,14 @@
-var myImage = document.querySelector('img');
+var srcs = [
+  'images/school-3623869_960_720.jpg',
+  'images/Anime_Barnstar_Hires.png'
+];
 
-myImage.onclick = function() {
-    var mySrc = myImage.getAttribute('src');
-    if(mySrc === 'images/Anime_Barnstar_Hires.png') {
-      myImage.setAttribute ('src','images/school-3623869_960_720.jpg');
-    } else {
-      myImage.setAttribute ('src','images/Anime_Barnstar_Hires.png');
-    }
+var currentImage = 0;
+var mainImage = document.querySelector('img');
+
+mainImage.onclick = () => {
+  currentImage = currentImage < srcs.length - 1 ? currentImage + 1 : 0;
+  mainImage.setAttribute('src', srcs[currentImage]); 
 }
 
 var myButton = document.querySelector('button');
