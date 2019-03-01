@@ -1,6 +1,6 @@
 var srcs = [
-  'images/school-3623869_960_720.jpg',
-  'images/Anime_Barnstar_Hires.png'
+  'images/Anime_Barnstar_Hires.png',
+  'images/school-3623869_960_720.jpg'
 ];
 
 var currentImage = 0;
